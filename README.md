@@ -158,9 +158,10 @@ This requires:
 ```
 
 ### TODO
-Added Terminal Window
+Add Terminal Window
 
-Added tabs for pages (buffers)
+Add tabs for pages (buffers)
+
+Add COC
 
 Update color theme
-
