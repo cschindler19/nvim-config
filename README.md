@@ -159,5 +159,8 @@ This requires:
 
 ### TODO
 Added Terminal Window
+
 Added tabs for pages (buffers)
+
 Update color theme
+
