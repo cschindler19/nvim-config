@@ -285,6 +285,8 @@ vim.keymap.set('n', '<C-l>', '<C-w>l')
 vim.keymap.set('n', '<leader>e', '<Cmd>Neotree toggle<CR>')
 -- maps.n["<leader>e"] = { "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" }
 
+-- Add quick map to Lazy
+vim.keymap.set('n', '<leader>p', '<Cmd>Lazy<CR>')
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
