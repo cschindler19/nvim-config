@@ -159,8 +159,4 @@ This requires:
 
 ### TODO
 
-Add COC
-
 Add Optisharp
-
-Update color theme
