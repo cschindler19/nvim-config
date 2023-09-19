@@ -152,7 +152,8 @@ require('lazy').setup({
     end,
   },
   ]]--
-  { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
+  --{ "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
+  { "navarasu/onedark.nvim" },
 
   -- Toggle terminal
   {'akinsho/toggleterm.nvim', version = "*", config = true},
@@ -229,6 +230,12 @@ require('lazy').setup({
   --    For additional information see: https://github.com/folke/lazy.nvim#-structuring-your-plugins
   { import = 'custom.plugins' },
 }, {})
+
+-- Enable Theme
+require('onedark').setup {
+  style = 'darker'
+}
+require('onedark').load()
 
 -- [[ Setting options ]]
 -- See `:help vim.o`
