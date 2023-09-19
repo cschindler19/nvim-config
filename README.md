@@ -158,10 +158,9 @@ This requires:
 ```
 
 ### TODO
-Add Terminal Window
-
-Add tabs for pages (buffers)
 
 Add COC
+
+Add Optisharp
 
 Update color theme
