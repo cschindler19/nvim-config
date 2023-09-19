@@ -142,6 +142,7 @@ require('lazy').setup({
     },
   },
 
+  --[[
   {
     -- Theme inspired by Atom
     'navarasu/onedark.nvim',
@@ -150,6 +151,11 @@ require('lazy').setup({
       vim.cmd.colorscheme 'onedark'
     end,
   },
+  ]]--
+  { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
+
+  -- Toggle terminal
+  {'akinsho/toggleterm.nvim', version = "*", config = true},
 
   {
     -- Set lualine as statusline
@@ -298,6 +304,16 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   group = highlight_group,
   pattern = '*',
 })
+
+local maps = require('customconfigs.utils').empty_map_table()
+
+-- [[ Configure Toggle Terminal ]]
+vim.keymap.set('n', '<leader>th', '<CMD>ToggleTerm size=10 direction=horizontal<cr>', { desc = "Toggle Horizontal Terminal"})
+vim.keymap.set('t', '<C-h>', "<C-\\><C-n><C-w>h",{silent = true})
+vim.keymap.set('t', '<C-j>', "<C-\\><C-n><C-w>j",{silent = true})
+vim.keymap.set('t', '<C-k>', "<C-\\><C-n><C-w>k",{silent = true})
+vim.keymap.set('t', '<C-l>', "<C-\\><C-n><C-w>l",{silent = true})
+
 
 -- [[ Configure Telescope ]]
 -- See `:help telescope` and `:help telescope.setup()`
