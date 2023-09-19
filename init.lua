@@ -233,7 +233,7 @@ require('lazy').setup({
 
 -- Enable Theme
 require('onedark').setup {
-  style = 'darker'
+  style = 'deep', 
 }
 require('onedark').load()
 
