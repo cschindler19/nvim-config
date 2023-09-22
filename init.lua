@@ -237,6 +237,9 @@ require('onedark').setup {
 }
 require('onedark').load()
 
+-- [[ COC Setup]]
+--let g:coc_node_path = 'path'
+
 -- [[ Setting options ]]
 -- See `:help vim.o`
 -- NOTE: You can change these options as you wish!
