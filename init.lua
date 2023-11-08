@@ -251,6 +251,10 @@ vim.o.hlsearch = false
 
 -- Make line numbers default
 vim.wo.relativenumber = true
+vim.wo.number = true
+
+-- Set No Line Wrap
+vim.o.wrap = false
 
 -- Enable mouse mode
 vim.o.mouse = 'a'
